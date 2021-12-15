@@ -19,16 +19,16 @@ export default function App() {
   return (
     <View style={styles.container}>
 	
-		<Image source={logo} style={{ width: 305, height: 159 }} /> 
-
 		<Text style={{color: '#888', fontSize: 18}}> 
-			To share a photo from your phone with a friend, just press the button below!
+			Tap the logo to share a photo from your device!
 		</Text>
+		<br/>
 		<TouchableOpacity
         onPress={openImagePickerAsync}
-        style={{ backgroundColor: 'blue' }}>
-        <Text style={{ fontSize: 20, color: '#fff' }}>Pick a photo</Text>
-      </TouchableOpacity>
+        style={{ backgroundColor: 'gray' }}>
+		<Image source={logo} style={{ width: 305, height: 159 }} /> 
+		</TouchableOpacity>
+		
 	</View>
   );
 }
